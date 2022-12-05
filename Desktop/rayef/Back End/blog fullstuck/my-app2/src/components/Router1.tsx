@@ -1,22 +1,21 @@
 import React from 'react'
 import {Routes,Route}from 'react-router-dom';
-import Login from '../Pages/Login';
+import { LoginPage } from '../Pages/LoginPage';
 import ProtectedRoute from './ProtectedRoute';
-import Signup from '../Pages/Signup';
 import BlogsPage from '../Pages/BlogsPage';
+import { RegisterPage } from '../Pages/RegisterPage';
 
 
 function Router1() {
   return (
 <>
 <Routes>
-    
-<Route path="/Login" element={<Login/>}/>
-<Route path="/Signup" element={<Signup/>}/>
+<Route path="/Login" element={<LoginPage/>}/>
+<Route path="/Register" element={<RegisterPage/>}/>
 
 <Route element={<ProtectedRoute />}>
-            <Route path='/' element={<BlogsPage/>} />
-          </Route>
+<Route path='/' element={<BlogsPage/>} />
+</Route>
 
 </Routes>
 

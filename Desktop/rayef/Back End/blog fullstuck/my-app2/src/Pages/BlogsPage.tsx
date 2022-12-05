@@ -124,6 +124,7 @@ import {
                 borderRadius='0.5rem'
               >
                 <Text fontSize='1rem'>{blog.title}</Text>
+                <Text fontSize='1rem'>{blog.message}</Text>
                 <Button
                   onClick={() => deleteBlog(blog.id)}
                   backgroundColor='red.400'
@@ -138,7 +139,12 @@ import {
               <Input
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
-                placeholder='Add new Blog'
+                placeholder='Add new Title Blog'
+              />
+              <Input
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                placeholder='Add new Message'
               />
               <Button onClick={addNewBlog} width='100%'>
                 Add Blog
