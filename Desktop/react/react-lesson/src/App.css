@@ -1,0 +1,19 @@
+
+
+.nav1{
+  display:flex;
+ justify-content: space-evenly;
+ flex-direction: row;
+
+ background-color: #63B3ED;
+ height: 100px;
+}
+
+a{
+  padding-top: 30px;
+}
+.Card{
+  display: grid;
+  grid-template-columns: repeat(3,2fr);
+  background-color: #BEE3F8;
+}
